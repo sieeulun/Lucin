@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: dactyl}
 layers:
-  Default Layer:
+  2THM8N:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - +
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -37,38 +37,38 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
   - V
   - B
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - PLAY PAUSE
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - $$mdi:apple-keyboard-command$$
+  - {t: '3', h: toggle}
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - AL KEYBOARD LAYOUT
+  - Raise Layer
+  - Raise Layer
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: ., s: '>'}
   - {t: ',', s: <}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-up-bold$$
+  - AC UNDO
+  - AC ZOOM IN
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - AC REDO
   - $$mdi:apple-keyboard-control$$
-  - LEFT WIN
-  - RIGHT WIN
+  - Lower Layer
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -142,7 +142,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -205,8 +205,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -532,4 +532,4 @@ combos:
   k: $$mdi:progress-download$$
 - p: [0, 12]
   k: {t: '`', s: '~'}
-  l: [Default Layer]
+  l: [2THM8N]
