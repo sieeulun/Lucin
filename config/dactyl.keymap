@@ -116,15 +116,17 @@
         SIXDOO {
             display-name = "Default Layer";
             bindings = <
-&kp ESCAPE      &kp N1            &kp N2        &kp N3             &kp N4         &kp N5                                       &kp N6         &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB         &kp Q             &kp W         &kp E              &kp R          &kp T                                        &kp Y          &kp U      &kp I      &kp O     &kp P     &kp EQUAL
-&kp LEFT_SHIFT  &kp A             &kp S         &kp D              &kp F          &kp G                                        &kp H          &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z             &kp X         &kp C              &kp V          &kp B             &kp RET  &kp C_PLAY_PAUSE  &kp N          &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp BSLH
-                                  &kp LEFT_GUI  &tog 3             &kp SPACE      &kp LALT          &tog 2   &kp DELETE        &kp BACKSPACE  &kp ENTER  &tog 3     &kp RGUI
-&kp C_AC_UNDO   &kp C_AC_ZOOM_IN  &kp RET       &kp C_AC_ZOOM_OUT  &kp C_AC_REDO  &kp LEFT_CONTROL  &mo 1    &kp ESC           &kp RSHFT      &kp LEFT   &kp DOWN   &kp RET   &kp UP    &kp RIGHT
+&kp ESCAPE      &kp N1            &kp N2        &kp N3             &kp N4         &kp N5                                        &kp N6         &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB         &kp Q             &kp W         &kp E              &kp R          &kp T                                         &kp Y          &kp U      &kp I      &kp O     &kp P     &kp EQUAL
+&kp LEFT_SHIFT  &kp A             &kp S         &kp D              &kp F          &kp G                                         &kp H          &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z             &kp X         &kp C              &kp V          &kp B             &mkp MB3  &kp C_PLAY_PAUSE  &kp N          &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp BSLH
+                                  &kp LEFT_GUI  &tog 3             &kp SPACE      &kp LALT          &mo 2     &kp DELETE        &kp BACKSPACE  &kp ENTER  &tog 3     &kp RGUI
+&kp C_AC_UNDO   &kp C_AC_ZOOM_IN  &kp RET       &kp C_AC_ZOOM_OUT  &kp C_AC_REDO  &kp LEFT_CONTROL  &mo 1     &kp ESC           &kp RSHFT      &kp LEFT   &kp DOWN   &kp RET   &kp UP    &kp RIGHT
             >;
 
-            sensor-bindings = <&Scroll_D_U>, <&Scroll_U_D>;
+            sensor-bindings =
+                <&Scroll_D_U>,
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
 
             label = "2THM8N";
         };
@@ -132,85 +134,54 @@
         Functions {
             display-name = "Lower Layer";
             bindings = <
-&trans  &kp F1           &kp F2          &kp F3           &kp F4      &trans                  &trans  &kp KP_NUMLOCK   &kp KP_DIVIDE    &kp KP_ASTERISK  &kp KP_MINUS  &kp HOME
-&trans  &kp F5           &kp F6          &kp F7           &kp F8      &trans                  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &kp PAGE_UP
-&trans  &kp F9           &kp F10         &kp F11          &kp F12     &trans                  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans        &kp PAGE_DOWN
-&trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INSERT  &trans  &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp END
-                         &trans          &trans           &trans      &trans  &trans  &trans  &trans  &kp KP_EQUAL     &kp N0           &kp DOT
-&trans  &trans           &trans          &trans           &trans      &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans        &trans
+&trans  &kp F1           &kp F2          &kp F3           &kp F4      &trans                            &trans  &kp KP_NUMLOCK   &kp KP_DIVIDE    &kp KP_ASTERISK  &kp KP_MINUS  &kp HOME
+&trans  &kp F5           &kp F6          &kp F7           &kp F8      &trans                            &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &kp PAGE_UP
+&trans  &kp F9           &kp F10         &kp F11          &kp F12     &trans                            &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans        &kp PAGE_DOWN
+&trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INSERT  &trans  &kp LC(NUMBER_0)  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp END
+                         &trans          &trans           &trans      &trans  &trans            &trans  &trans  &kp KP_EQUAL     &kp N0           &kp DOT
+&trans  &trans           &trans          &trans           &trans      &trans  &trans            &trans  &trans  &trans           &trans           &trans           &trans        &trans
             >;
 
             sensor-bindings =
-                <&inc_dec_kp DOWN UP_ARROW>,
+                <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>,
                 <&inc_dec_kp RIGHT LEFT>;
 
             label = "Func";
         };
 
-        Lazy {
-            display-name = "Raise Layer";
+        LazyAlps {
+            display-name = "LazyAlps";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp MINUS  &kp N0    &kp N9     &kp N8     &kp N7     &kp N6                              &trans  &trans  &trans  &trans  &trans  &trans
+&kp EQUAL  &kp P     &kp O      &kp I      &kp U      &kp Y                               &trans  &trans  &trans  &trans  &trans  &trans
+&kp APOS   &kp SEMI  &kp L      &kp K      &kp J      &kp H                               &trans  &trans  &trans  &trans  &trans  &trans
+&kp BSLH   &kp FSLH  &kp DOT    &kp COMMA  &kp M      &kp N     &kp C_PLAY_PAUSE  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                     &kp RSHFT  &kp RGUI   &kp ENTER  &kp BSPC  &trans            &trans  &trans  &trans  &trans  &trans
+&trans     &trans    &trans     &trans     &trans     &trans    &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_NEXT C_PREVIOUS>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
-            label = "Lazy";
+            label = "LazyAlps";
         };
 
-        layer_3 {
+        LazyNum {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp HOME       &kp C_MENU_ESC   &kp KP_DIVIDE    &kp KP_ASTERISK  &kp KP_MINUS  &trans                  &trans  &kp ESCAPE       &kp KP_SLASH     &kp KP_ASTERISK  &kp KP_MINUS  &kp HOME
+&kp PAGE_UP    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &trans                  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &kp PAGE_UP
+&kp PAGE_DOWN  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans        &trans                  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans        &kp PAGE_DOWN
+&kp END        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &trans  &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp END
+                                &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_EQUAL  &trans  &trans  &trans  &trans  &kp KP_ENTER     &kp KP_NUMBER_0  &kp KP_DOT
+&trans         &trans           &trans           &trans           &trans        &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans        &trans
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
+                <&Scroll_D_U>,
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-        };
 
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
+            label = "LazyNum";
         };
     };
 };
