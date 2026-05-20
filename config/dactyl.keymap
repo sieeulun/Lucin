@@ -134,12 +134,12 @@
         Functions {
             display-name = "Lower Layer";
             bindings = <
-&trans        &kp F1           &kp F2          &kp F3           &kp F4      &trans                            &trans  &kp KP_NUMLOCK   &kp KP_DIVIDE    &kp KP_ASTERISK  &kp KP_MINUS  &kp HOME
-&trans        &kp F5           &kp F6          &kp F7           &kp F8      &trans                            &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &kp PAGE_UP
-&kp CAPSLOCK  &kp F9           &kp F10         &kp F11          &kp F12     &trans                            &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans        &kp PAGE_DOWN
-&trans        &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INSERT  &trans  &kp LC(NUMBER_0)  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp END
-                               &trans          &trans           &trans      &trans  &trans            &trans  &trans  &kp KP_EQUAL     &kp N0           &kp DOT
-&trans        &trans           &trans          &trans           &trans      &trans  &trans            &trans  &trans  &trans           &trans           &trans           &trans        &trans
+&trans        &kp F1           &kp F2          &kp F3           &kp F4   &trans                            &trans  &kp INS         &kp HOME        &kp PAGE_UP      &trans  &kp HOME
+&trans        &kp F5           &kp F6          &kp F7           &kp F8   &trans                            &trans  &kp DEL         &kp END         &kp PAGE_DOWN    &trans  &kp PAGE_UP
+&kp CAPSLOCK  &kp F9           &kp F10         &kp F11          &kp F12  &trans                            &trans  &none           &kp UP_ARROW    &none            &trans  &kp PAGE_DOWN
+&trans        &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none    &trans  &kp LC(NUMBER_0)  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp END
+                               &trans          &trans           &trans   &trans  &trans            &trans  &trans  &trans          &none           &none
+&trans        &trans           &trans          &trans           &trans   &trans  &trans            &trans  &trans  &trans          &trans          &trans           &trans  &trans
             >;
 
             sensor-bindings =
@@ -167,7 +167,7 @@
             label = "LazyAlps";
         };
 
-        LazyNum {
+        Numpad {
             bindings = <
 &kp HOME       &kp C_MENU_ESC   &kp KP_DIVIDE    &kp KP_ASTERISK  &kp KP_MINUS  &trans                  &trans  &kp ESCAPE       &kp KP_SLASH     &kp KP_ASTERISK  &kp KP_MINUS  &kp HOME
 &kp PAGE_UP    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &trans                  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &kp PAGE_UP
@@ -181,7 +181,7 @@
                 <&Scroll_D_U>,
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
 
-            label = "LazyNum";
+            label = "Numpad";
         };
     };
 };
