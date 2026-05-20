@@ -100,7 +100,7 @@ layers:
   - KP 9
   - KP PLUS
   - PgUp
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   - F9
   - F10
   - F11
