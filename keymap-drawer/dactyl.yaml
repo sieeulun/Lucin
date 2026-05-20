@@ -51,8 +51,8 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-command$$
-  - {t: Numpad, h: toggle}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - LazyAlps
@@ -303,8 +303,19 @@ layers:
 combos:
 - p: [33, 32, 30]
   k: $$mdi:progress-download$$
-- p: [36, 37, 39]
+- p: [30, 32, 33]
   k: $$mdi:progress-download$$
-- p: [0, 12]
-  k: {t: '`', s: '~'}
-  l: [2THM8N]
+- p: [54, 66]
+  k: {t: Numpad, h: toggle}
+- p: [50, 51]
+  k: LWIN
+- p: [58, 59]
+  k: RWIN
+- p: [42, 62]
+  k: $$mdi:bluetooth-off$$
+- p: [1, 62]
+  k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
+- p: [62, 2]
+  k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
+- p: [62, 3]
+  k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
