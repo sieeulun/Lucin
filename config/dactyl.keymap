@@ -134,12 +134,12 @@
         Functions {
             display-name = "Lower Layer";
             bindings = <
-&trans        &kp F1           &kp F2          &kp F3           &kp F4   &trans                            &trans  &kp INS         &kp HOME        &kp PAGE_UP      &trans  &kp HOME
-&trans        &kp F5           &kp F6          &kp F7           &kp F8   &trans                            &trans  &kp DEL         &kp END         &kp PAGE_DOWN    &trans  &kp PAGE_UP
-&kp CAPSLOCK  &kp F9           &kp F10         &kp F11          &kp F12  &trans                            &trans  &none           &kp UP_ARROW    &none            &trans  &kp PAGE_DOWN
-&trans        &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none    &trans  &kp LC(NUMBER_0)  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp END
-                               &trans          &trans           &trans   &trans  &trans            &trans  &trans  &trans          &none           &none
-&trans        &trans           &trans          &trans           &trans   &trans  &trans            &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&kp GRAVE     &kp F1           &kp F2            &kp F3             &kp F4   &trans                            &trans  &kp INS         &kp HOME        &kp PAGE_UP      &trans  &kp HOME
+&trans        &kp F5           &kp F6            &kp F7             &kp F8   &trans                            &trans  &kp DEL         &kp END         &kp PAGE_DOWN    &trans  &kp PAGE_UP
+&kp CAPSLOCK  &kp F9           &kp F10           &kp F11            &kp F12  &trans                            &trans  &none           &kp UP_ARROW    &none            &trans  &kp PAGE_DOWN
+&trans        &kp PRINTSCREEN  &kp SCROLLLOCK    &kp PAUSE_BREAK    &none    &trans  &kp LC(NUMBER_0)  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp END
+                               &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans   &trans  &trans            &trans  &trans  &trans          &none           &none
+&trans        &trans           &trans            &trans             &trans   &trans  &trans            &trans  &trans  &trans          &trans          &trans           &trans  &trans
             >;
 
             sensor-bindings =
