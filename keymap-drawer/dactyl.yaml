@@ -59,7 +59,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: LazyNum, h: toggle}
+  - MENU
   - RGUI
   - AC UNDO
   - AC ZOOM IN
