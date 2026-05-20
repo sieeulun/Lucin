@@ -60,7 +60,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - MENU
-  - RGUI
+  - $$mdi:apple-keyboard-shift$$
   - AC UNDO
   - AC ZOOM IN
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -69,7 +69,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - Func
   - $$mdi:keyboard-esc$$
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
