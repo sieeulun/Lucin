@@ -61,11 +61,11 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - MENU
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&mmv MOVE_Y(-100)'
+  - '&mmv MOVE_X(100)'
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - '&mmv MOVE_X(-100)'
+  - '&mmv MOVE_Y(100)'
   - $$mdi:apple-keyboard-control$$
   - Func
   - $$mdi:keyboard-esc$$
@@ -118,7 +118,7 @@ layers:
   - PAUSE BREAK
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+0
+  - {t: Ctl+0, s: Ctl+)}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
