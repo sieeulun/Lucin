@@ -61,11 +61,11 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - MENU
   - $$mdi:apple-keyboard-shift$$
-  - '&mmv MOVE_Y(-100)'
-  - '&mmv MOVE_X(100)'
-  - $$mdi:mouse-left-click-outline$$
   - '&mmv MOVE_X(-100)'
+  - '&mmv MOVE_Y(-100)'
+  - $$mdi:mouse-left-click-outline$$
   - '&mmv MOVE_Y(100)'
+  - '&mmv MOVE_X(100)'
   - $$mdi:apple-keyboard-control$$
   - Func
   - $$mdi:keyboard-esc$$
