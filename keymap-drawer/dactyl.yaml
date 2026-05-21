@@ -61,11 +61,11 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - MENU
   - $$mdi:apple-keyboard-shift$$
-  - AC UNDO
-  - AC ZOOM IN
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - AC ZOOM OUT
-  - AC REDO
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - $$mdi:apple-keyboard-control$$
   - Func
   - $$mdi:keyboard-esc$$
@@ -136,11 +136,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - AC BACK
+  - AC UNDO
+  - AC REFRESH
+  - AC REDO
+  - AC FORWARD
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -311,11 +311,11 @@ combos:
   k: LWIN
 - p: [58, 59]
   k: RWIN
-- p: [42, 62]
-  k: $$mdi:bluetooth-off$$
-- p: [1, 62]
+- p: [42, 54, 66]
+  k: {t: BT DISC, h: '0'}
+- p: [1, 42]
   k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
-- p: [62, 2]
+- p: [2, 42]
   k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
-- p: [62, 3]
+- p: [3, 42]
   k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
