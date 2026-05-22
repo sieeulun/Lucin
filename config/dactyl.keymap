@@ -118,23 +118,23 @@
         };
 
         PairBT {
-            bindings = <&bt BT_DISC 0>;
-            key-positions = <42 54 66>;
+            bindings = <&to 4>;
+            key-positions = <53 65 54 66>;
         };
 
         MainBT {
             bindings = <&bt BT_SEL 0>;
-            key-positions = <1 42>;
+            key-positions = <42 0>;
         };
 
         BT1 {
             bindings = <&bt BT_SEL 1>;
-            key-positions = <2 42>;
+            key-positions = <42 1>;
         };
 
         BT2 {
             bindings = <&bt BT_SEL 2>;
-            key-positions = <3 42>;
+            key-positions = <42 2>;
         };
     };
 
@@ -212,15 +212,17 @@
             label = "Numpad";
         };
 
-        layer_4 {
+        Bluetooth {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR                         &none  &none  &none  &none  &none  &none
+&none         &none         &none          &none         &none         &none                              &none  &none  &none  &none  &none  &none
+&none         &none         &none          &none         &none         &none                              &none  &none  &none  &none  &none  &none
+&none         &none         &none          &none         &none         &none       &bt BT_CLR_ALL  &none  &none  &none  &none  &none  &none  &none
+                            &none          &none         &to 0         &none       &none           &none  &none  &none  &none  &none
+&none         &none         &bt BT_DISC 0  &none         &none         &none       &none           &none  &none  &none  &none  &none  &none  &none
             >;
+
+            label = "Bluetooth";
         };
     };
 };
