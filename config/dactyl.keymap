@@ -148,7 +148,7 @@
 &kp TAB            &kp Q              &kp W             &kp E              &kp R             &kp T                                         &kp Y          &kp U      &kp I       &kp O            &kp P     &kp EQUAL
 &kp LEFT_SHIFT     &kp A              &kp S             &kp D              &kp F             &kp G                                         &kp H          &kp J      &kp K       &kp L            &kp SEMI  &kp SQT
 &kp LCTRL          &kp Z              &kp X             &kp C              &kp V             &kp B             &mkp MB3  &kp C_PLAY_PAUSE  &kp N          &kp M      &kp COMMA   &kp DOT          &kp FSLH  &kp BSLH
-                                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SPACE         &kp LALT          &mo 2     &kp DELETE        &kp BACKSPACE  &kp ENTER  &kp K_MENU  &kp RIGHT_SHIFT
+                                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SPACE         &kp LALT          &sl 2     &kp DELETE        &kp BACKSPACE  &kp ENTER  &kp K_MENU  &kp RIGHT_SHIFT
 &mmv MOVE_X(-100)  &mmv MOVE_Y(-100)  &mkp LCLK         &mmv MOVE_Y(100)   &mmv MOVE_X(100)  &kp LEFT_CONTROL  &mo 1     &kp ESC           &kp RCTRL      &kp LEFT   &kp DOWN    &kp RET          &kp UP    &kp RIGHT
             >;
 
@@ -171,7 +171,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_AC_ZOOM_OUT C_AC_ZOOM_IN>,
+                <&inc_dec_kp LC(PLUS) LC(MINUS)>,
                 <&inc_dec_kp RIGHT LEFT>;
 
             label = "Func";
@@ -210,6 +210,17 @@
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
 
             label = "Numpad";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
