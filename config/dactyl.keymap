@@ -144,12 +144,12 @@
         SIXDOO {
             display-name = "Default Layer";
             bindings = <
-&kp ESCAPE         &kp N1             &kp N2            &kp N3             &kp N4            &kp N5                                        &kp N6         &kp N7     &kp N8      &kp N9           &kp N0    &kp MINUS
-&kp TAB            &kp Q              &kp W             &kp E              &kp R             &kp T                                         &kp Y          &kp U      &kp I       &kp O            &kp P     &kp EQUAL
-&kp LEFT_SHIFT     &kp A              &kp S             &kp D              &kp F             &kp G                                         &kp H          &kp J      &kp K       &kp L            &kp SEMI  &kp SQT
-&kp LCTRL          &kp Z              &kp X             &kp C              &kp V             &kp B             &mkp MB3  &kp C_PLAY_PAUSE  &kp N          &kp M      &kp COMMA   &kp DOT          &kp FSLH  &kp BSLH
-                                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SPACE         &kp LALT          &sl 2     &kp DELETE        &kp BACKSPACE  &kp ENTER  &kp K_MENU  &kp RIGHT_SHIFT
-&mmv MOVE_X(-100)  &mmv MOVE_Y(-100)  &mkp LCLK         &mmv MOVE_Y(100)   &mmv MOVE_X(100)  &kp LEFT_CONTROL  &mo 1     &kp ESC           &kp RCTRL      &kp LEFT   &kp DOWN    &kp RET          &kp UP    &kp RIGHT
+&kp ESCAPE         &kp NUMBER_1       &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4      &kp NUMBER_5                                  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0  &kp MINUS
+&kp TAB            &kp Q              &kp W             &kp E              &kp R             &kp T                                         &kp Y          &kp U         &kp I         &kp O            &kp P         &kp EQUAL
+&kp LEFT_SHIFT     &kp A              &kp S             &kp D              &kp F             &kp G                                         &kp H          &kp J         &kp K         &kp L            &kp SEMI      &kp SQT
+&kp LCTRL          &kp Z              &kp X             &kp C              &kp V             &kp B             &mkp MB3  &kp C_PLAY_PAUSE  &kp N          &kp M         &kp COMMA     &kp DOT          &kp FSLH      &kp BSLH
+                                      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SPACE         &kp LALT          &sl 2     &kp DELETE        &kp BACKSPACE  &kp ENTER     &kp K_MENU    &kp RIGHT_SHIFT
+&mmv MOVE_X(-100)  &mmv MOVE_Y(-100)  &mkp LCLK         &mmv MOVE_Y(100)   &mmv MOVE_X(100)  &kp LEFT_CONTROL  &mo 1     &kp ESC           &kp RCTRL      &kp LEFT      &kp DOWN      &kp RET          &kp UP        &kp RIGHT
             >;
 
             sensor-bindings =
@@ -180,12 +180,12 @@
         LazyAlps {
             display-name = "LazyAlps";
             bindings = <
-&kp MINUS  &kp N0                &kp N9     &kp N8                 &kp N7         &kp N6                              &trans  &trans  &trans  &trans  &trans  &trans
-&kp EQUAL  &kp P                 &kp O      &kp I                  &kp U          &kp Y                               &trans  &trans  &trans  &trans  &trans  &trans
-&kp APOS   &kp SEMI              &kp L      &kp K                  &kp J          &kp H                               &trans  &trans  &trans  &trans  &trans  &trans
-&kp BSLH   &kp FSLH              &kp DOT    &kp COMMA              &kp M          &kp N     &kp C_PLAY_PAUSE  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                 &kp RSHFT  &kp RGUI               &kp ENTER      &kp BSPC  &trans            &trans  &trans  &trans  &trans  &trans
-&kp LC(Z)  &kp LC(LEFT_BRACKET)  &kp B      &kp LC(RIGHT_BRACKET)  &kp LC(LS(Z))  &trans    &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp MINUS  &kp NUMBER_0          &kp NUMBER_9  &kp NUMBER_8           &kp NUMBER_7   &kp NUMBER_6                            &trans  &trans  &trans  &trans  &trans  &trans
+&kp EQUAL  &kp P                 &kp O         &kp I                  &kp U          &kp Y                                   &trans  &trans  &trans  &trans  &trans  &trans
+&kp APOS   &kp SEMI              &kp L         &kp K                  &kp J          &kp H                                   &trans  &trans  &trans  &trans  &trans  &trans
+&kp BSLH   &kp FSLH              &kp DOT       &kp COMMA              &kp M          &kp N         &kp C_PLAY_PAUSE  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                 &kp RSHFT     &kp RGUI               &kp ENTER      &kp BSPC      &trans            &trans  &trans  &trans  &trans  &trans
+&kp LC(Z)  &kp LC(LEFT_BRACKET)  &kp B         &kp LC(RIGHT_BRACKET)  &kp LC(LS(Z))  &trans        &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
@@ -197,12 +197,12 @@
 
         Numpad {
             bindings = <
-&kp HOME       &kp C_MENU_ESC   &kp KP_DIVIDE    &kp KP_ASTERISK  &kp KP_MINUS  &trans                  &trans  &kp ESCAPE       &kp KP_SLASH     &kp KP_ASTERISK  &kp KP_MINUS  &kp HOME
-&kp PAGE_UP    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &trans                  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &kp PAGE_UP
-&kp PAGE_DOWN  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans        &trans                  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans        &kp PAGE_DOWN
-&kp END        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &trans  &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp END
-                                &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_EQUAL  &trans  &trans  &trans  &trans  &kp KP_ENTER     &kp KP_NUMBER_0  &kp KP_DOT
-&trans         &trans           &trans           &trans           &trans        &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans        &trans
+&kp HOME       &trans  &kp ESCAPE       &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS                  &trans  &kp ESCAPE       &kp KP_SLASH     &kp KP_ASTERISK  &kp KP_MINUS  &kp HOME
+&kp PAGE_UP    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                   &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &kp PAGE_UP
+&kp PAGE_DOWN  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans                        &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans        &kp PAGE_DOWN
+&kp END        &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &kp END
+                       &kp KP_DOT       &kp KP_NUMBER_0  &kp KP_EQUAL     &trans        &trans  &trans  &trans  &kp KP_ENTER     &kp KP_NUMBER_0  &kp KP_DOT
+&trans         &trans  &trans           &trans           &trans           &trans        &trans  &trans  &trans  &trans           &trans           &trans           &trans        &trans
             >;
 
             sensor-bindings =
