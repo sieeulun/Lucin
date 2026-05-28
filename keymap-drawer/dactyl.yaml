@@ -2,16 +2,16 @@ layout: {zmk_keyboard: dactyl}
 layers:
   2THM8N:
   - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - {t: '-', s: _}
   - $$mdi:keyboard-tab$$
   - Q
@@ -152,11 +152,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   LazyAlps:
   - {t: '-', s: _}
-  - {t: '0', s: )}
-  - {t: '9', s: (}
-  - {t: '8', s: '*'}
-  - {t: '7', s: '&'}
-  - {t: '6', s: ^}
+  - '0'
+  - '9'
+  - '8'
+  - '7'
+  - '6'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -227,11 +227,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Numpad:
   - HOME
-  - MENU ESC
-  - KP DIVIDE
-  - KP ASTERISK
-  - KP MINUS
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-esc$$
+  - KP SLASH
+  - KP MULTIPLY
+  - KP MINUS
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-esc$$
   - KP SLASH
@@ -239,11 +239,11 @@ layers:
   - KP MINUS
   - HOME
   - PgUp
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 7
   - KP 8
   - KP 9
   - KP PLUS
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 7
   - KP 8
@@ -251,10 +251,10 @@ layers:
   - KP PLUS
   - PgUp
   - PgDn
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 4
   - KP 5
   - KP 6
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 4
@@ -263,10 +263,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
   - END
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 1
   - KP 2
   - KP 3
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -276,8 +276,8 @@ layers:
   - KP 3
   - {t: '$$mdi:transfer$$', type: trans}
   - END
-  - KP 0
   - KP DOT
+  - KP 0
   - KP EQUAL
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
