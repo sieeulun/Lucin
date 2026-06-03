@@ -343,7 +343,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - BT CLR ALL
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -394,3 +394,10 @@ combos:
   k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
 - p: [42, 2]
   k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
+- p: [42, 3]
+  k: {h: '4', s: '$$mdi:bluetooth-connect$$'}
+- p: [42, 4]
+  k: {h: '5', s: '$$mdi:bluetooth-connect$$'}
+- p: [62, 42]
+  k: BT CLR ALL
+  l: [Bluetooth]
