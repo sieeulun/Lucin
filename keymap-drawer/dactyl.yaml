@@ -56,8 +56,8 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - {t: LazyAlps, h: '$$mdi:gesture-tap-hold$$'}
+  - $$mdi:keyboard-esc$$
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - MENU
   - $$mdi:apple-keyboard-shift$$
@@ -67,8 +67,8 @@ layers:
   - '&mmv MOVE_Y(100)'
   - '&mmv MOVE_X(100)'
   - $$mdi:apple-keyboard-control$$
-  - {t: 'Sft+$$mdi:backspace-reverse-outline$$', h: Func}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:backspace$$', h: Func}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -202,9 +202,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
-  - RGUI
+  - MENU
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
