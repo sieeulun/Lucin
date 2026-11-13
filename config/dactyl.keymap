@@ -159,6 +159,65 @@
             key-positions = <65 66>;
             layers = <0>;
         };
+
+        LStudio {
+            bindings = <&studio_unlock>;
+            key-positions = <50 51>;
+            layers = <4>;
+        };
+
+        RStudio {
+            bindings = <&studio_unlock>;
+            key-positions = <58 59>;
+            layers = <4>;
+        };
+
+        RArrows {
+            bindings = <&lt 5 LEFT_WIN>;
+            key-positions = <68 67>;
+            layers = <0>;
+        };
+
+        RNumpad {
+            bindings = <&tog 3>;
+            key-positions = <55 67>;
+        };
+
+        RPairBT {
+            bindings = <&to 4>;
+            key-positions = <55 56 68 67>;
+        };
+
+        RMainBT {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <43 11>;
+        };
+
+        RBT1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <43 10>;
+        };
+
+        RBT2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <43 9>;
+        };
+
+        RBT3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <43 8>;
+        };
+
+        RBT4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <43 7>;
+        };
+
+        RClrAllBT {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <71 43>;
+            layers = <4>;
+        };
     };
 
     keymap {
@@ -185,12 +244,12 @@
         Functions {
             display-name = "Lower Layer";
             bindings = <
-&kp GRAVE      &kp F1         &kp F2            &kp F3             &kp F4            &trans                      &trans  &kp INS         &kp HOME        &kp PAGE_UP      &trans  &kp HOME
-&trans         &kp F5         &kp F6            &kp F7             &kp F8            &trans                      &trans  &kp DEL         &kp END         &kp PAGE_DOWN    &trans  &kp PAGE_UP
-&kp CAPSLOCK   &kp F9         &kp F10           &kp F11            &kp F12           &trans                      &trans  &none           &kp UP_ARROW    &none            &trans  &kp PAGE_DOWN
-&trans         &none          &kp PRINTSCREEN   &kp SCROLLLOCK     &kp PAUSE_BREAK   &trans  &kp LC(N0)  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp END
-                              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans            &trans  &trans      &trans  &trans  &trans          &none           &none
-&kp C_AC_BACK  &kp C_AC_UNDO  &kp C_AC_REFRESH  &kp C_AC_REDO      &kp C_AC_FORWARD  &trans  &trans      &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&kp GRAVE      &kp F1         &kp F2            &kp F3             &kp F4            &kp HOME                           &kp HOME       &kp F1           &kp F2            &kp F3             &kp F4         &kp GRAVE
+&trans         &kp F5         &kp F6            &kp F7             &kp F8            &kp PAGE_UP                        &kp PAGE_UP    &kp F5           &kp F6            &kp F7             &kp F8         &trans
+&kp CAPSLOCK   &kp F9         &kp F10           &kp F11            &kp F12           &kp PAGE_DOWN                      &kp PAGE_DOWN  &kp F9           &kp F10           &kp F11            &kp F12        &kp CAPSLOCK
+&trans         &none          &kp PRINTSCREEN   &kp SCROLLLOCK     &kp PAUSE_BREAK   &kp END        &kp LC(N0)  &trans  &kp END        &kp PRINTSCREEN  &kp SCROLLLOCK    &kp PAUSE_BREAK    &trans         &trans
+                              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans            &trans         &trans      &trans  &trans         &trans           &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp C_AC_BACK  &kp C_AC_UNDO  &kp C_AC_REFRESH  &kp C_AC_REDO      &kp C_AC_FORWARD  &trans         &trans      &trans  &trans         &kp C_AC_BACK    &kp C_AC_REDO     &kp C_AC_REFRESH   &kp C_AC_UNDO  &kp C_AC_FORWARD
             >;
 
             sensor-bindings =
@@ -237,12 +296,12 @@
 
         Bluetooth {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR                       &none  &none  &none  &none  &none  &none
-&none         &none         &none          &none         &none         &none                            &none  &none  &none  &none  &none  &none
-&none         &none         &none          &none         &none         &none                            &none  &none  &none  &none  &none  &none
-&none         &none         &none          &none         &none         &none       &out OUT_TOG  &none  &none  &none  &none  &none  &none  &none
-                            &none          &none         &to 0         &none       &none         &none  &none  &none  &none  &none
-&none         &none         &bt BT_DISC 0  &none         &none         &none       &none         &none  &none  &none  &none  &none  &none  &none
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR                              &bt BT_CLR  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2   &bt BT_SEL 1  &bt BT_SEL 0
+&none         &none         &none          &none         &none         &none                                   &none       &none         &none         &none          &none         &none
+&none         &none         &none          &none         &none         &none                                   &none       &none         &none         &none          &none         &none
+&none         &none         &none          &none         &none         &none       &out OUT_TOG  &out OUT_TOG  &none       &none         &none         &none          &none         &none
+                            &none          &none         &to 0         &none       &none         &none         &none       &to 0         &none         &none
+&none         &none         &bt BT_DISC 0  &none         &none         &none       &none         &none         &none       &none         &none         &bt BT_DISC 0  &none         &none
             >;
 
             label = "Bluetooth";
